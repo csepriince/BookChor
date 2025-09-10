@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .new-comment {
+    margin-top: 10px;
+    padding-top: 8px;
+    font-size: 14px;
+  }
+  .new-comment h3 {
+    margin: 5px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  textarea, input, select {
+    width: 100%;
+    padding: 6px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 13px;
+  }
+  textarea {
+    height: 60px;
+    resize: none;
+  }
+  button {
+    width: 100%;
+    padding: 8px;
+    background: linear-gradient(90deg, orange, gold);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  button:hover {
+    opacity: 0.9;
+  }
+s
+</style>
+<body>
+    <div class="new-comment">
+    <h3 style="background-image: radial-gradient(yellow,orange);" >Write a Review</h3>
+    <label>Rating:</label>
+    <select id="rating">
+      <option value="5">★★★★★ (5)</option>
+      <option value="4">★★★★☆ (4)</option>
+      <option value="3">★★★☆☆ (3)</option>
+      <option value="2">★★☆☆☆ (2)</option>
+      <option value="1">★☆☆☆☆ (1)</option>
+    </select>
+<a href="alert.html">
+    <input type="text" id="name" placeholder="Your name (optional)" />
+    <textarea id="message" placeholder="Write your review here..."></textarea>
+    <button onclick="addComment()">Post Review</button></a>
+  </div>
+</body>
+</html>

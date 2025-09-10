@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-image: linear-gradient(yellow,orange);
+}
+.logo h1 {
+    margin: 0;
+    color: #2c3e50;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+nav a:hover{
+    color: white
+}
+.search input {
+    padding: 5px;
+    border-radius: 15px;
+}
+.search button {
+    padding: 6px 10px;
+    background-color: #2c3e50;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+}
+
+ body{
+        letter-spacing:2px;
+    }
+    .books {
+    padding: 40px;
+    text-align: center;
+}
+div{
+
+}
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.book-card {
+    background: #fff;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+.book-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.price {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.book-card button {
+    padding: 8px 15px;
+    border: none;
+    background: linear-gradient(45deg, #ffdd00, #ff8800);
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.book-card button:hover {
+    background: linear-gradient(45deg, #ffcc00, #ff6600);
+}
+
+
+</style>
+</style>
+<body>
+    <header>
+    <div class="logo">
+        <h1>📚 BookChor</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="scamer.html"><img src="scan_me_qr_code-Photoroom.png"style="width:30px;height:30px;"> </a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="page.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="search">
+        <input type="text" placeholder="Search books...">
+        <button>Search</button>
+    </div>
+</header>
+<img src="HOME.jpg" style="height: 100%;width:100%;">
+<div style="text-align: center;">
+<button style="background-image: linear-gradient(yellow,orange);padding:10px 20px;margin: 30px;border:none;border-radius:5px;cursor:pointer;text-align: center;">Explore Now</button>
+</div>
+<img src="about.jpg" style="height: 100%;width:100%;">
+
+
+
+<section class="books">
+    <h2 style="background-image: linear-gradient(orange,yellow);">Our Collection</h2>
+    <div class="book-grid">
+        <div class="book-card">
+            <img src="1.jpg" alt="Book 1">
+            <h3>MASTERING HTML, CSS & Java Script</h3>
+            <p>by Julie C. Meloni </p>
+            <p class="price">₹-19% 99</p>
+            <a href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fcheckout%2Fentry%2Fcart%3FisEligibilityLogicDisabled%3D1%26referrer%3Dcart%26proceedToRetailCheckout%3DProceed%2Bto%2Bcheckout%26ref_%3Dox_sw_proceed%26proceedToCheckout%3D1%26tangoWeblabStatus%3Dtango_enable_unrec_customer%26oldCustomerId%3D0%26pipelineType%3DChewbacca%26isUnrec%3D1&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amazon_checkout_in&openid.mode=checkid_setup&language=en_IN&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"><button>Buy Now</button></a>
+        </div>
+        <div class="book-card">
+            <img src="2" alt="Book 2">
+            <h3>Full-Stack Web Development with MERN</h3>
+            <p>by Nabendu Biswas</p>
+            <p class="price">₹-16% 99</p>
+            <a href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fcheckout%2Fentry%2Fcart%3FisEligibilityLogicDisabled%3D1%26referrer%3Dcart%26proceedToRetailCheckout%3DProceed%2Bto%2Bcheckout%26ref_%3Dox_sw_proceed%26proceedToCheckout%3D1%26tangoWeblabStatus%3Dtango_enable_unrec_customer%26oldCustomerId%3D0%26pipelineType%3DChewbacca%26isUnrec%3D1&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amazon_checkout_in&openid.mode=checkid_setup&language=en_IN&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"><button>Buy Now</button></a>
+        </div>
+        <div class="book-card">
+            <img src="3" alt="Book 3">
+            <h3>PYTHON PROGRAMMING 2</h3>
+            <p>by Reema Thareja </p>
+            <p class="price">₹-12% 399</p>
+            <a href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fcheckout%2Fentry%2Fcart%3FisEligibilityLogicDisabled%3D1%26referrer%3Dcart%26proceedToRetailCheckout%3DProceed%2Bto%2Bcheckout%26ref_%3Dox_sw_proceed%26proceedToCheckout%3D1%26tangoWeblabStatus%3Dtango_enable_unrec_customer%26oldCustomerId%3D0%26pipelineType%3DChewbacca%26isUnrec%3D1&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amazon_checkout_in&openid.mode=checkid_setup&language=en_IN&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"><button>Buy Now</button></a>
+        </div>
+        
+        <div class="book-card">
+            <img src="4.jpg" alt="Book 4">
+            <h3>Book Title 4</h3>
+            <p>by Harsh Bhasin</p>
+            <p class="price">₹-19% 250</p>
+            <a href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fcheckout%2Fentry%2Fcart%3FisEligibilityLogicDisabled%3D1%26referrer%3Dcart%26proceedToRetailCheckout%3DProceed%2Bto%2Bcheckout%26ref_%3Dox_sw_proceed%26proceedToCheckout%3D1%26tangoWeblabStatus%3Dtango_enable_unrec_customer%26oldCustomerId%3D0%26pipelineType%3DChewbacca%26isUnrec%3D1&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amazon_checkout_in&openid.mode=checkid_setup&language=en_IN&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"><button>Buy Now</button></a>
+        </div>
+        <div class="book-card">
+            <img src="5" alt="Book 5">
+            <h3>BIHAR POLYTECHNIC (2025)</h3>
+            <p>by Sanjeev Dixit, Dr. Ajay Kumar</p>
+            <p class="price">₹-21% 180</p>
+            <a href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fcheckout%2Fentry%2Fcart%3FisEligibilityLogicDisabled%3D1%26referrer%3Dcart%26proceedToRetailCheckout%3DProceed%2Bto%2Bcheckout%26ref_%3Dox_sw_proceed%26proceedToCheckout%3D1%26tangoWeblabStatus%3Dtango_enable_unrec_customer%26oldCustomerId%3D0%26pipelineType%3DChewbacca%26isUnrec%3D1&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amazon_checkout_in&openid.mode=checkid_setup&language=en_IN&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"><button>Buy Now</button></a>
+        </div>
+        <div class="book-card">
+            <img src="6" alt="Book 6">
+            <h3>Bhagavad Gita: Yatharoop (hindi)</h3>
+            <p>by A.C Bhaktivedanta Swami Prahupada</p>
+            <p class="price">₹-19% 142</p>
+            <a href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fcheckout%2Fentry%2Fcart%3FisEligibilityLogicDisabled%3D1%26referrer%3Dcart%26proceedToRetailCheckout%3DProceed%2Bto%2Bcheckout%26ref_%3Dox_sw_proceed%26proceedToCheckout%3D1%26tangoWeblabStatus%3Dtango_enable_unrec_customer%26oldCustomerId%3D0%26pipelineType%3DChewbacca%26isUnrec%3D1&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amazon_checkout_in&openid.mode=checkid_setup&language=en_IN&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"><button>Buy Now</button></a>
+        </div>
+        <div class="book-card">
+            <img src="7" alt="Book 6">
+            <h3>English Communication </h3>
+            <p>by Dr. Bibha Devi</p>
+            <p class="price">₹-12% ₹120</p>
+            <a href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fcheckout%2Fentry%2Fcart%3FisEligibilityLogicDisabled%3D1%26referrer%3Dcart%26proceedToRetailCheckout%3DProceed%2Bto%2Bcheckout%26ref_%3Dox_sw_proceed%26proceedToCheckout%3D1%26tangoWeblabStatus%3Dtango_enable_unrec_customer%26oldCustomerId%3D0%26pipelineType%3DChewbacca%26isUnrec%3D1&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amazon_checkout_in&openid.mode=checkid_setup&language=en_IN&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"><button>Buy Now</button></a>
+        </div>
+        <div class="book-card">
+            <img src="8.jpg" alt="Book 6">
+            <h3>Computer Awareness</h3>
+            <p>by Arihant Experts</p>
+            <p class="price">₹-8% ₹134</p>
+            <a href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fcheckout%2Fentry%2Fcart%3FisEligibilityLogicDisabled%3D1%26referrer%3Dcart%26proceedToRetailCheckout%3DProceed%2Bto%2Bcheckout%26ref_%3Dox_sw_proceed%26proceedToCheckout%3D1%26tangoWeblabStatus%3Dtango_enable_unrec_customer%26oldCustomerId%3D0%26pipelineType%3DChewbacca%26isUnrec%3D1&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amazon_checkout_in&openid.mode=checkid_setup&language=en_IN&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"><button>Buy Now</button></a>
+        </div>
+    
+        <a href="https://www.yatharthgeeta.com/select-country/"><button style="background-image:linear-gradient(yellow,orange);border-radius: 3px;" >View More</button></a>
+</section>
+<div style="text-align:center;">
+  <a href="scamer.html" style="display:inline-block; padding:10px 20px; margin:10px; background:#ff9800; color:white; text-decoration:none; border-radius:8px;">
+    Sell Book
+  </a>
+
+  <a href="payment.html" style="display:inline-block; padding:10px 20px; margin:10px; background:#4caf50; color:white; text-decoration:none; border-radius:8px;"> Courses
+  </a>
+</div>
+
+<div id="review-box">
+  <h2 style="background-image: linear-gradient(orange,yellow);margin: 20px;text-align: center;">Ratings & Reviews</h2>
+
+
+    <div style="background:#fff; padding:10px; margin:10px 0; border:1px solid #f97316; border-radius:8px;">
+      <b style="color:#ea580c;">Aakash Kumar</b> <span style="color:gray; font-size:12px;">· Sep 10, 2025</span>
+      <div style="color:#f59e0b;">★★★★★</div>
+      <p>Amazing book! The language is simple and engaging. The storyline kept me hooked till the very end.</p>
+    </div>
+
+    <div style="background:#fff; padding:10px; margin:10px 0; border:1px solid #f97316; border-radius:8px;">
+      <b style="color:#ea580c;">Priya Sharma</b> <span style="color:gray; font-size:12px;">· Sep 9, 2025</span>
+      <div style="color:#f59e0b;">★★★★☆</div>
+      <p>Very informative book, especially useful for students. A few more examples would have made it perfect.</p>
+    </div>
+
+    <div style="background:#fff; padding:10px; margin:10px 0; border:1px solid #f97316; border-radius:8px;">
+      <b style="color:#ea580c;">Rahul Verma</b> <span style="color:gray; font-size:12px;">· Sep 8, 2025</span>
+      <div style="color:#f59e0b;">★★★☆☆</div>
+      <p>Great book at a reasonable price. Only the delivery was a bit delayed.</p>
+    </div>
+
+<a href="comment.html" style="display:inline-block; padding:10px 20px; margin:10px; background-image: linear-gradient(yellow,orange); color:black; text-decoration:none; border-radius:8px;">
+    <b>Add Review</b></a>
+  
+</div>
+<img src="contact.jpg"style="width:100%;height:100%;margin:2px;border-radius:8px;">
+</body>
+</html>

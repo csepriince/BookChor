@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Scanner</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+    .box {
+      background: linear-gradient(135deg, orange, yellow);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 300px;
+    }
+    .box h2 {
+      margin-bottom: 15px;
+    }
+    input, button {
+      margin: 8px 0;
+      padding: 8px;
+      width: 90%;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      background: #333;
+      color: white;
+      cursor: pointer;
+    }
+    #preview {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>📚 Book Details</h2>
+    <input type="text" id="bookName" placeholder="Book Name">
+    <input type="text" id="authorName" placeholder="Author Name">
+    <input type="text" id="barcode" placeholder="Barcode No.">
+    <input type="text" id="price" placeholder="Original Price">
+    <input type="text" id="sellPrice" placeholder="Selling Price">
+    <h3 style="text-align: center;font-size: small;">OR</h3>
+    <a href="scanner.html"><button>Scan Barcode</button></a>
+    <div id="preview"></div>
+  </div>
+
+</body>
+</html>

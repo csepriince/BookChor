@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scan Book</title>
+  <script src="https://unpkg.com/html5-qrcode"></script>
+
+  <!-- Internal CSS -->
+  <style>
+    body {
+      text-align: center;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+    }
+    h2, h3 {
+      color: #333;
+    }
+    #reader {
+      width: 300px;
+      margin: 20px auto;
+      border: 2px dashed #aaa;
+      border-radius: 10px;
+      background: #fff;
+      padding: 10px;
+    }
+    form {
+      margin-top: 20px;
+      display: inline-block;
+      text-align: left;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      font-weight: bold;
+      color: #444;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background: #0b5ed7;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #094aa9;
+    }
+    body{
+        background-image:linear-gradient(orange,yellow);
+        background-repeat: no-repeat;
+
+    }
+  </style>
+</head>
+<body>
+
+  <h2>📷 Scan your Book</h2>
+  <div id="reader"></div>
+  
+  
+
+  <script>
+    function onScanSuccess(decodedText, decodedResult) {
+      // Barcode ko input me daal do
+      document.getElementById("barcode").value = decodedText;
+    }
+    let html5QrcodeScanner = new Html5QrcodeScanner(
+      "reader", { fps: 10, qrbox: 250 });
+    html5QrcodeScanner.render(onScanSuccess);
+  </script>
+
+</body>
+</html>
